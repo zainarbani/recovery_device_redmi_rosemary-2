@@ -41,13 +41,13 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for rosemary...\x1b[m"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
-		export OF_MAINTAINER="Woomymy"
-		export FOX_VERSION=R11.1_1
-		export FOX_BUILD_TYPE="Beta"
+		#export OF_MAINTAINER="Woomymy"
+		#export FOX_VERSION=R11.1_1
+		#export FOX_BUILD_TYPE="Beta"
 
 		# Device info
-		export OF_AB_DEVICE=1
-		export OF_VIRTUAL_AB_DEVICE=1
+		export FOX_AB_DEVICE=1
+		export FOX_VIRTUAL_AB_DEVICE=1
 		export TARGET_DEVICE_ALT="secret, maltose"
 		
 		# OTA / DM-Verity / Encryption
