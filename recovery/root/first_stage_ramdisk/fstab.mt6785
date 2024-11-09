@@ -86,7 +86,7 @@ system_ext		/system_ext		ext4 ro wait,slotselect,avb,logical,first_stage_mount,n
 /dev/block/by-name/vbmeta_system /vbmeta_system emmc defaults first_stage_mount,nofail,slotselect,avb=vbmeta
 
 # MIUI
-mi_ext /mnt/vendor/mi_ext none ro wait,slotselect,avb=vbmeta,logical,first_stage_mount,nofail
+mi_ext /mnt/vendor/mi_ext ext4 ro wait,slotselect,avb=vbmeta,logical,first_stage_mount,nofail
 /mnt/vendor/mi_ext /mi_ext none ro,bind wait,nofail
 overlay /product/overlay overlay ro,lowerdir=/mnt/vendor/mi_ext/product/overlay/:/product/overlay check,nofail
 overlay /product/app overlay ro,lowerdir=/mnt/vendor/mi_ext/product/app/:/product/app check,nofail
